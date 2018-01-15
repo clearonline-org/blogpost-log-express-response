@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 // your api handler here
 ```
 
-* override the `res.end` function
+* override the `res.end` function inside the middleware
 ```javascript
 app.use((req, res, next) => {
     res.end = function(chunk) {
